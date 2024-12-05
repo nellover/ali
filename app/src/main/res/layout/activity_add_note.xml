@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#F9F9F9"
+    android:orientation="vertical"
+    tools:context=".AddNoteActivity">
+
+        <!-- Title Heading -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter une nouvelle note"
+            android:textSize="28sp"
+            android:textColor="#2C3E50"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Title Input Field -->
+        <EditText
+            android:id="@+id/note_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrer le titre"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#2C3E50"
+            android:textColorHint="#95A5A6"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Content Input Field -->
+        <EditText
+            android:id="@+id/note_content"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="entrer le contenu"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#2C3E50"
+            android:textColorHint="#95A5A6"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3498DB"
+            android:padding="14dp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="16dp" />
+
+</LinearLayout>
